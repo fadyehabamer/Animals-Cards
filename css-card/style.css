@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Slabo 27px", serif;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.peacock {
+  box-shadow: -1px 15px 45px -12px #54b948;
+}
+
+.sheep {
+  box-shadow: -1px 15px 45px -12px #333333;
+}
+
+.owl {
+  box-shadow: -1px 15px 45px -12px #784421;
+}
+
+.card-image {
+  width: 350px;
+  height: 250px;
+  transform: translateY(-30px);
+  user-select: none;
+}
+
+.card-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  background: #fff;
+  text-align: justify;
+  height: 0px;
+  overflow: hidden;
+  color: #fff;
+  min-height: 0;
+  transition: color 0.5s 0.5s, padding 0.5s, min-height 0.5s;
+}
+
+.card:hover .card-description {
+  height: initial;
+  min-height: 150px;
+  padding: 20px 35px;
+  color: #000;
+}
+
+.card:hover .stats-container {
+  opacity: 1;
+}
+
+.stats-container {
+  opacity: 0;
+  padding: 0 !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 1.5s 0.6s linear;
+  background: #54b948;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.sheep-container {
+  background: #333333;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.owl-container {
+  background: #784421;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.stats-container > div {
+  padding: 10px 20px;
+}
+
+.lifespan {
+  border-right: 2px solid black;
+}
+
+.mass {
+  border-right: 2px solid black;
+}
+
+.label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.value {
+  text-align: center;
+}
